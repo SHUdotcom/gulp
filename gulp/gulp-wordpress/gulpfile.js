@@ -167,7 +167,7 @@ const browserSyncFunc = () => {
 }
 
 const browserSyncOption = {
-  /**静的サイトは有効 / WPは無効にする**/
+  /**静的サイトは無効 / WPは有効にする**/
   proxy: "http://gulp-test.local",// ローカルにある「Site Domain」に合わせる
 
   // notify: false,// ブラウザ更新時に出てくる通知を非表示にする
