@@ -7,10 +7,10 @@ Template Name: トップページ
 <?php get_header(); ?>
 
 <main>
-  <section class="news__section">
-    <div class="news__title">
-      NEWSです。
-    </div>
+  <section class="fv">
+    <h2 class="fv__title">
+      TOPです。
+    </h2>
   </section>
 </main>
 

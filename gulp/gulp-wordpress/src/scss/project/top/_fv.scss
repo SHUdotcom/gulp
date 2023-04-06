@@ -1,14 +1,19 @@
 @use "global" as *;
 
-.about {
+
+.fv {
     width: 100%;
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about__title {
+.fv__title {
     font-size: 24px;
     font-weight: 700;
-    color: #c73c3c;
+    color: cornflowerblue;
+
+    @include mq(tab) {
+        color: rgb(237, 100, 214);
+    }
 }

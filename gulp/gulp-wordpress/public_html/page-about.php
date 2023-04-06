@@ -7,10 +7,10 @@ Template Name: ABOUT
 <?php get_header(); ?>
 
 <main>
-  <section class="about__section">
-    <div class="about__title">
+  <section class="about">
+    <h2 class="about__title">
       ABOUTページです。
-    </div>
+    </h2>
   </section>
 
 

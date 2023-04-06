@@ -2,16 +2,18 @@
 
 header {
     width: 100%;
-    height: 100%;    
+    height: 100px;  
     background-color: #333;
 }
-.header__wrapper {
+.header__inner {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    width: 70%;
-    min-height: 100px;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 rem(40);
 }
 
 .header__logo {
@@ -25,6 +27,7 @@ header {
 
     a {
         color:white;
+        font-size: 24px;
     }
 
     li + li {
