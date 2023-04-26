@@ -63,7 +63,6 @@ const cssSass = () => {
       }))
     .pipe(sass({ outputStyle: 'expanded' })) //指定できるキー expanded compressed
     .pipe(gcmq())
-    // .pipe(sassGlob())
     .pipe(autoprefixer(TARGET_BROWSERS))// ベンダープレフィックス自動付与
     .pipe(gulp.dest(distPath.css, { sourcemaps: './' })) //コンパイル先
     .pipe(browserSync.stream())

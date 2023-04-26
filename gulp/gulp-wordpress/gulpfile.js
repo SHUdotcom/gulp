@@ -55,6 +55,7 @@ const cssSass = () => {
   return gulp.src(srcPath.scss, {
     sourcemaps: true
   })
+  .pipe(sassGlob())
     .pipe(
       //エラーが出ても処理を止めない
       plumber({
@@ -62,7 +63,6 @@ const cssSass = () => {
       }))
     .pipe(sass({ outputStyle: 'expanded' })) //指定できるキー expanded compressed
     .pipe(gcmq())
-    .pipe(sassGlob())
     .pipe(autoprefixer(TARGET_BROWSERS))// ベンダープレフィックス自動付与
     .pipe(gulp.dest(distPath.css, { sourcemaps: './' })) //コンパイル先
     .pipe(browserSync.stream())
