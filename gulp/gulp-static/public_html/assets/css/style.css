@@ -13,92 +13,14 @@ html {
   letter-spacing: 0;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-dl,
-li,
-dt,
-dd,
-p,
-div,
-span,
-img,
-a,
-table,
-tr,
-th,
-td,
-small,
-button,
-time,
-figure {
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
 body {
   width: 100%;
 }
 
-html {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-li,
-dd {
-  list-style-type: none;
-}
-
-header,
-footer,
-nav,
-section,
-article,
-aside,
-figure,
-figcaption {
-  display: block;
-}
-
-img {
-  border: none;
-  vertical-align: bottom;
-  display: block;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-input,
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
-  border-radius: 0;
+.text-wrapper {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .header {
@@ -135,6 +57,36 @@ textarea {
   margin: 0 auto;
 }
 
+.business {
+  background-image: url(../img/image.webp);
+}
+
+.business-wrapper {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.business__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.text-wrapper {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
 .fv {
   background-image: url(../img/image.webp);
 }
@@ -154,7 +106,31 @@ textarea {
 }
 
 .fv__title {
-  font-size: 2.5rem;
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.voice {
+  background-image: url(../img/image.webp);
+}
+
+.voice-wrapper {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.voice__title {
+  font-size: 3.125rem;
   font-weight: 700;
   color: #ffffff;
 }

@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.fv {
+.business {
   background-image: url(../img/image.webp); //style.cssから見たパス
 }
 
-.fv-wrapper {
+.business-wrapper {
   width: 100%;
   height: calc(100vh - 100px);
   display: flex;
@@ -13,8 +13,15 @@
   
 }
 
-.fv__title {
-  font-size: rem(60);
+.business__title {
+  font-size: rem(40);
+  font-weight: 700;
+  color: $title-color;
+}
+
+
+.text-wrapper {
+  font-size: rem(40);
   font-weight: 700;
   color: $title-color;
 }
