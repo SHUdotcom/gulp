@@ -6,20 +6,50 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-size: 16px;
-  @media screen and (max-width : $pc) {
-    font-size: vw(strip-unit($pc),16);
-  }
-  @media screen and (max-width : $tab) {
+
+  //~375px
+  @media screen and (max-width : $sp) {
     font-size: vw(strip-unit($sp),16);
   }
-}
-* {
-  font-family: "Noto Sans JP", sans-serif;
-  color: $txt-color;
-  letter-spacing: 0;
+
+  //376px~767px
+  font-size: 16px;
+  
+  //768px~$pc
+  @media screen and (min-width : $tab) {
+    font-size: vw(strip-unit($pc),16);
+  }
+
+  //$pc~
+  @media screen and (min-width : $pc) {
+    font-size: 16px;
+  }
 }
 
 body {
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: $text;
+  background-color: $base;
+  font-family: $noto-sans;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.is-pc {
+  display: block;
+  @include mq(tab) {
+    display: none;
+  }
+}
+
+.is-sp {
+  display: none;
+  @include mq(tab) {
+    display: block;
+  }
 }

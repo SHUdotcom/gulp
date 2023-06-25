@@ -2,20 +2,23 @@
 
 .header {
   width: 100%;
-  height: 100px;
-  background-color: $primary-color;
+  height: 87px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.header-inner {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__title {
-    color: $title-color;
-    font-size: rem(40);
-    font-weight: 700;
+.header__inner {
+  width: auto;
+  height: 100%;
+  padding-right: 0;
+  padding-left: 22px;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: $white;
+  @include mq(tab) {
+    padding-left: 10px;
+    padding-right: 22px;
+  }
 }
